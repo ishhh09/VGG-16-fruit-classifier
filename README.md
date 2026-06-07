@@ -131,17 +131,13 @@ Non-Trainable Parameters: 14,714,688
 
 # Custom Focal Loss
 
-To handle dataset imbalance, Focal Loss was implemented.
-
 Formula:
 
-FL(pt) = -α(1 − pt)^γ log(pt)
+L=−(1−pt)^γ(log(pt))+λ(1−pt)^2
 
-Parameters Used:
-
-* Alpha = 0.25
-* Gamma = 2.0
-
+pt= predicted probability of the true class
+γ = focusing parameter (typically 2)
+λ = confidence penalty weight (typically 0.2)
 Benefits:
 
 * Reduces the impact of easy examples
