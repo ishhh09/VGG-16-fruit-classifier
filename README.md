@@ -304,4 +304,4 @@ All team members participated equally in project planning, experimentation, test
 
 # Conclusion
 
-This project successfully demonstrates the use of Transfer Learning with VGG16 and Focal Loss for multi-class fruit recognition. The model achieved approximately 86% validation accuracy and effectively classified 15 fruit categories while addressing dataset imbalance challenges.
+This project successfully demonstrates the use of Transfer Learning with VGG16 and Custom Loss Function for multi-class fruit recognition. The model achieved approximately 86% validation accuracy and effectively classified 15 fruit categories while addressing dataset imbalance challenges.
