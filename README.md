@@ -129,7 +129,7 @@ Non-Trainable Parameters: 14,714,688
 
 ---
 
-# Custom Focal Loss
+# Custom Loss Function
 
 Formula:
 
@@ -283,7 +283,7 @@ VGG-16-fruit-classifier/
 
 ## Sristy Kumari (sristy09agr-ctrl)
 
-* Focal Loss implementation research
+* Custom Loss Function Generation
 * Model evaluation and metric analysis
 * Classification report interpretation
 * Confusion matrix generation
