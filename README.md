@@ -63,7 +63,7 @@ Validation Images: 14,104
 
 ---
 
-Data Exploration and Dataset Complexity
+# Data Exploration and Dataset Complexity
 The fruit dataset was analyzed to understand its distribution and challenges. The dataset contains multiple fruit classes with thousands of images captured under different lighting conditions, backgrounds, orientations, and viewpoints. Some classes, such as Apple, Guava, and Kiwi, contain fewer samples, leading to class imbalance.
 
 The classification task is challenging due to:
