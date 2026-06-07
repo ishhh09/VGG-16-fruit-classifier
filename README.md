@@ -136,7 +136,9 @@ Formula:
 L=−(1−pt)^γ(log(pt))+λ(1−pt)^2
 
 pt= predicted probability of the true class
+
 γ = focusing parameter (typically 2)
+
 λ = confidence penalty weight (typically 0.2)
 Benefits:
 
