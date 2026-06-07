@@ -302,16 +302,6 @@ All team members participated equally in project planning, experimentation, test
 
 ---
 
-# Future Improvements
-
-* Fine-tuning deeper VGG16 layers
-* Testing ResNet50 and EfficientNet architectures
-* Class balancing techniques
-* Deployment using Streamlit
-* Real-time fruit recognition application
-
----
-
 # Conclusion
 
 This project successfully demonstrates the use of Transfer Learning with VGG16 and Focal Loss for multi-class fruit recognition. The model achieved approximately 86% validation accuracy and effectively classified 15 fruit categories while addressing dataset imbalance challenges.
