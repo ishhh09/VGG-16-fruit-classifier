@@ -63,21 +63,20 @@ Validation Images: 14,104
 
 ---
 
-# Data Exploration
+Data Exploration and Dataset Complexity
+The fruit dataset was analyzed to understand its distribution and challenges. The dataset contains multiple fruit classes with thousands of images captured under different lighting conditions, backgrounds, orientations, and viewpoints. Some classes, such as Apple, Guava, and Kiwi, contain fewer samples, leading to class imbalance.
 
-The dataset was analyzed to determine class distribution.
+The classification task is challenging due to:
 
-Observations:
+Class imbalance across categories.
 
-* Most fruit classes contained thousands of images.
-* Some classes such as Apple, Guava and Kiwi had significantly fewer samples.
-* The dataset exhibited class imbalance.
+High intra-class variation (differences within the same fruit class).
 
-To visualize this distribution, a class distribution graph was generated and saved as:
+Visual similarity between different fruit classes.
 
-class_distribution.png
+Variations in lighting, background, and image quality.
 
----
+A class distribution graph was generated to visualize the dataset and saved as class_distribution.png. The complexity of the dataset motivated the use of VGG16, which can learn robust features for accurate fruit classification.
 
 # Data Preprocessing
 
