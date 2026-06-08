@@ -177,36 +177,23 @@ Phase 1:
 
 Training Results
 
-Epoch 1
-Training Accuracy: 50.36%
-Validation Accuracy: 69.04%
+Epoch 1 Training Accuracy: 49.97% Validation Accuracy: 69.54%
 
-Epoch 2
-Training Accuracy: 72.89%
-Validation Accuracy: 78.69%
+Epoch 2 Training Accuracy: 73.21% Validation Accuracy: 78.76%
 
-Epoch 3
-Training Accuracy: 80.00%
-Validation Accuracy: 83.74%
+Epoch 3 Training Accuracy: 80.63% Validation Accuracy: 83.61%
 
-Epoch 4
-Training Accuracy: 83.96%
-Validation Accuracy: 85.42%
+Epoch 4 Training Accuracy: 84.31% Validation Accuracy: 84.63%
 
-Epoch 5
-Training Accuracy: 86.63%
-Validation Accuracy: 86.56%
+Epoch 5 Training Accuracy: 86.75% Validation Accuracy: 87.35%
 
-Final Validation Accuracy:
-86.56%
+Final Validation Accuracy: 87.35%
 
-Final Evaluation Accuracy:
-88%
+Final Evaluation Accuracy: 88%
 
 Training curves are available in:
 
 training_curves.png
-
 ---
 
 # Evaluation Metrics
