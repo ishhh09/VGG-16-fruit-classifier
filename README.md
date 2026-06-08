@@ -1,4 +1,4 @@
-# VGG16 Fruit Recognition using Transfer Learning and Focal Loss
+# VGG16 Fruit Recognition using Transfer Learning and Custom Loss
 
 ## Project Overview
 
