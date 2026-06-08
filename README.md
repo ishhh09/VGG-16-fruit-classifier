@@ -202,7 +202,7 @@ Classification Report Summary:
 
 Accuracy: 88%
 
-Macro Average F1 Score: 87%
+Macro Average F1 Score: 88%
 
 Weighted Average F1 Score: 87%
 
@@ -210,17 +210,18 @@ Strongly Classified Fruits:
 
 Banana (F1: 0.98)
 Carambola (F1: 0.97)
-Guava (F1: 0.98)
-Pitaya (F1: 0.98)
-Muskmelon (F1: 0.92)
+Guava (F1: 0.96)
+Pitaya (F1: 0.99)
+Muskmelon (F1: 0.91)
 Mango (F1: 0.93)
 
 More Challenging Fruits:
 
-Apple
-Pomegranate
-Tomatoes
-Pear
+Apple (F1-Score: 0.64)
+Pomegranate (F1-Score: 0.78)
+Tomatoes (F1-Score: 0.74)
+Peach (F1-Score: 0.77)
+Pear (F1-Score: 0.84)
 
 Possible Reasons:
 
@@ -302,7 +303,7 @@ The final model was trained on more than 70,000 fruit images belonging to 15 cat
 
 - Validation Accuracy: 86.56%
 - Final Evaluation Accuracy: 88%
-- Macro F1 Score: 0.87
+- Macro F1 Score: 0.88
 - Weighted F1 Score: 0.87
 
 The modified loss function improved classification performance compared to the earlier focal-loss implementation and enabled better handling of difficult samples and class imbalance.
