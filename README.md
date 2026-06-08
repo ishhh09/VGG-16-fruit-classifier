@@ -128,23 +128,21 @@ Non-Trainable Parameters: 14,714,688
 
 ---
 
-# Custom Loss Function
+Modified Custom Loss Function
 
-Formula:
+L = -log(pt) + λ(1 - pt)^3
 
-L=−(1−pt)^γ(log(pt))+λ(1−pt)^2
+where:
 
-pt= predicted probability of the true class
+pt = predicted probability of the true class
+λ = regularization/confidence penalty parameter
 
-γ = focusing parameter (typically 2)
-
-λ = confidence penalty weight (typically 0.2)
 Benefits:
 
-* Reduces the impact of easy examples
-* Focuses learning on difficult samples
-* Improves performance on minority classes
-
+- Places stronger emphasis on difficult samples.
+- Increases penalty for low-confidence predictions.
+- Improves class discrimination.
+- Contributed to improved validation accuracy.
 ---
 
 # Training Configuration
@@ -177,26 +175,33 @@ Phase 1:
 
 ---
 
-# Training Results
+Training Results
 
 Epoch 1
-
-* Training Accuracy: 50.44%
-* Validation Accuracy: 72.39%
+Training Accuracy: 50.36%
+Validation Accuracy: 69.04%
 
 Epoch 2
-
-* Training Accuracy: 72.89%
-* Validation Accuracy: 81.91%
+Training Accuracy: 72.89%
+Validation Accuracy: 78.69%
 
 Epoch 3
+Training Accuracy: 80.00%
+Validation Accuracy: 83.74%
 
-* Training Accuracy: 79.99%
-* Validation Accuracy: 85.73%
+Epoch 4
+Training Accuracy: 83.96%
+Validation Accuracy: 85.42%
+
+Epoch 5
+Training Accuracy: 86.63%
+Validation Accuracy: 86.56%
 
 Final Validation Accuracy:
+86.56%
 
-85.73%
+Final Evaluation Accuracy:
+88%
 
 Training curves are available in:
 
@@ -208,32 +213,33 @@ training_curves.png
 
 Classification Report Summary:
 
-Accuracy: 86%
+Accuracy: 88%
 
-Macro Average F1 Score: 85%
+Macro Average F1 Score: 87%
 
-Weighted Average F1 Score: 85%
+Weighted Average F1 Score: 87%
 
 Strongly Classified Fruits:
 
-* Banana
-* Carambola
-* Guava
-* Pitaya
-* Muskmelon
+Banana (F1: 0.98)
+Carambola (F1: 0.97)
+Guava (F1: 0.98)
+Pitaya (F1: 0.98)
+Muskmelon (F1: 0.92)
+Mango (F1: 0.93)
 
 More Challenging Fruits:
 
-* Apple
-* Tomatoes
-* Peach
+Apple
+Pomegranate
+Tomatoes
+Pear
 
 Possible Reasons:
 
-* Visual similarity between fruits
-* Class imbalance
-* Limited samples in certain categories
-
+- Visual similarity among fruit categories.
+- Variations in lighting and viewpoint.
+- Residual class imbalance.
 ---
 
 # Confusion Matrix Analysis
@@ -301,6 +307,17 @@ All team members participated equally in project planning, experimentation, test
 
 ---
 
-# Conclusion
+Conclusion
 
-This project successfully demonstrates the use of Transfer Learning with VGG16 and Custom Loss Function for multi-class fruit recognition. The model achieved approximately 86% validation accuracy and effectively classified 15 fruit categories while addressing dataset imbalance challenges.
+This project successfully demonstrates the application of Transfer Learning using VGG16 combined with a Modified Custom Loss Function for multi-class fruit recognition.
+
+The final model was trained on more than 70,000 fruit images belonging to 15 categories and achieved:
+
+- Validation Accuracy: 86.56%
+- Final Evaluation Accuracy: 88%
+- Macro F1 Score: 0.87
+- Weighted F1 Score: 0.87
+
+The modified loss function improved classification performance compared to the earlier focal-loss implementation and enabled better handling of difficult samples and class imbalance.
+
+The project demonstrates the effectiveness of transfer learning for agricultural image classification and provides a strong foundation for automated fruit recognition systems.
