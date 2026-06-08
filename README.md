@@ -301,8 +301,8 @@ This project successfully demonstrates the application of Transfer Learning usin
 
 The final model was trained on more than 70,000 fruit images belonging to 15 categories and achieved:
 
-- Validation Accuracy: 86.56%
-- Final Evaluation Accuracy: 88%
+- Validation Accuracy: 87.35%
+- Final Evaluation Accuracy: 88.00%
 - Macro F1 Score: 0.88
 - Weighted F1 Score: 0.87
 
